@@ -16,11 +16,9 @@ https://javaee.github.io/glassfish/download
 When the application runs you are able to see the following jsp page in this URL: http://localhost:8080/m1/
 
 
-# Welcome to my Java EE 8 app!
-
-# My name is Alexandros and this is version 1.
- 
-# Press here to return the hole list. 
+### Welcome to my Java EE 8 app!  
+### My name is Alexandros and this is version 1.  
+### Press here to return the hole list.  
 
 Then you can open a testing REST client like Postman or Insomnia and execute REST API requests in a beautiful
 and elegant interface. The body of the requests should be in JSON format because the application consumes and
@@ -28,12 +26,13 @@ produces JSON.
 
 The application has an object-entity with the following attributes:
 
-"creator":   --> the name of the user which creates the object, should not be more than 50 characters and not null
-"dateCreated":   --> the date which the object is created (format:"05-06-2019"), must be in the present or future and not null,
-is generated in init before the object persist in database
-"id":   --> the id of the object in the database, it generated automatically
-"isCompleted":   --> a boolean variable (true or false), should not be null is generated in init before the object persist in database
-"lastmod":   --> the name of the user which modify the object last
+Variable | Purpose
+------------ | -------------
+creator | the name of the user which creates the object, should not be more than 50 characters and not null
+dateCreated | the date which the object is created (format:"05-06-2019"), must be in the present or future and not null, is generated in init before the object persist in database
+id | the id of the object in the database, it generated automatically
+isCompleted | a boolean variable (true or false), should not be null is generated in init before the object persist in database
+lastmod | the name of the user which modify the object last
 
 We use the RESTful EndPoints (URLs) to communicate with the database and perform the following actions:
 
@@ -125,5 +124,5 @@ which responds with all objects that we have in the database like:
   }
 
 we can do the same (see all objects) from the jsp page if we press:
-# Press here to return the hole list.
+###### Press here to return the hole list.
 
