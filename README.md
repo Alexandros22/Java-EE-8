@@ -24,13 +24,22 @@ When the application runs you are able to see the following jsp page in this URL
 
 Then you can open a testing REST client like Postman or Insomnia and execute REST API requests in a beautiful
 and elegant interface. The body of the requests should be in JSON format because the application consumes and
-produces JSON.
+produces JSON. 
 
-The RESTful EndPoints in this application are:
+The application has an object-entity with the following attributes:
+
+"creator":   --> the name of the user which creates the object, should not be more than 50 characters and not null
+"dateCreated":   --> the date which the object is created (format:"05-06-2019"), must be in the present or future and not null,
+is generated in init before the object persist in database
+"id":   --> the id of the object in the database, it generated automatically
+"isCompleted":   --> a boolean variable (true or false), should not be null is generated in init before the object persist in database
+"lastmod":   --> the name of the user which modify the object last
+
+We use the RESTful EndPoints (URLs) to communicate with the database and perform the following actions:
 
 > http://localhost:8080/m1/list/new  Method: POST
 
-which creates an object in the database. The body should contain something like:
+which creates a new object in the database. The body should contain something like:
 
 {
 	"creator" : "Alex",
@@ -50,14 +59,14 @@ and the response should be:
 
 > http://localhost:8080/m1/list/status?id=1  Method: POST
 
-which responses with the content of variable isCompleted: true or false
+which responds with the content of variable isCompleted: true or false
 We should put the id (x) of the object that we want to see (if it isCompleted) in the URL
 (http://localhost:8080/m1/list/status?id=x)
 
 
 > http://localhost:8080/m1/list/1  Method: GET
 
-which responses with the hole list object like this:
+which responds with the hole list object like this:
 
 {
   "creator": "Alex",
@@ -115,5 +124,6 @@ which responds with all objects that we have in the database like:
     "lastmod": "Sofia"
   }
 
-
+we can do the same (see all objects) from the jsp page if we press:
+# Press here to return the hole list.
 
