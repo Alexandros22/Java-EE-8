@@ -24,7 +24,8 @@ Then you can open a testing REST client like Postman or Insomnia and execute RES
 and elegant interface. The body of the requests should be in JSON format because the application consumes and
 produces JSON. 
 
-The application has an object-entity with the following attributes:
+The application uses an object-entity and interacts with the Java Database (javadb) which included in the Java implemention
+of GlassFish server. The object has the following attributes:
 
 Variable | Purpose
 ------------ | -------------
@@ -124,5 +125,5 @@ which responds with all objects that we have in the database like:
   }
 
 we can do the same (see all objects) from the jsp page if we press:
-###### Press here to return the hole list.
+#### Press here to return the hole list.
 
