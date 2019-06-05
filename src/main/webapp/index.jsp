@@ -24,7 +24,7 @@
             <input type="submit" value="Submit">
         </form> -->
         
-        <h3> <a href="http://localhost:8080/m1/list/all">Press here to return the hole list.</a> </h3>
+        <h3> <a href="http://localhost:8080/m1/list/all">Press here to return all objects.</a> </h3>
         
     </body>
 </html>
