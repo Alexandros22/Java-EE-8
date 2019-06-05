@@ -18,7 +18,7 @@ When the application runs you are able to see the following jsp page in this URL
 
 ### Welcome to my Java EE 8 app!  
 ### My name is Alexandros and this is version 1.  
-### Press here to return the hole list.  
+### Press here to return all objects.  
 
 Then you can open a testing REST client like Postman or Insomnia and execute REST API requests in a beautiful
 and elegant interface. The body of the requests should be in JSON format because the application consumes and
@@ -125,5 +125,5 @@ which responds with all objects that we have in the database like:
   }
 
 we can do the same (see all objects) from the jsp page if we press:
-#### Press here to return the hole list.
+#### Press here to return all objects.
 
