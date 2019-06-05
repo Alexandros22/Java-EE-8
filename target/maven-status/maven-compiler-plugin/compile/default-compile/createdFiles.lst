@@ -1,0 +1,4 @@
+myapp\rest\ListaEndPoint.class
+myapp\service\ListaDBService.class
+myapp\rest\ListaRest.class
+myapp\entity\Lista.class
